@@ -1,0 +1,9 @@
+aws:
+  region: ${AWS_DEFAULT_REGION:us-east-1}
+  accesskey: ${AWS_ACCESS_KEY_ID:dev}
+  secretkey: ${AWS_SECRET_ACCESS_KEY:dev}
+  sqs:
+    enabled: ${AWS_SQS_ENABLED:true}
+    kraken-request: ${AWS_SQS_KRAKEN_REQUEST:sqs-kraken-request}
+    endpoint: ${AWS_SQS_URL:http://localhost:4566}
+
