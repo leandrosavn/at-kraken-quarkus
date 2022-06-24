@@ -6,10 +6,10 @@ import org.eclipse.microprofile.config.inject.ConfigProperty
 import software.amazon.awssdk.services.sqs.SqsClient
 import software.amazon.awssdk.services.sqs.model.Message
 import software.amazon.awssdk.services.sqs.model.ReceiveMessageRequest
-import javax.enterprise.context.ApplicationScoped
 import javax.inject.Inject
+import javax.inject.Singleton
 
-@ApplicationScoped
+@Singleton
 class Launcher: AbstractVerticle() {
 
     @Inject
